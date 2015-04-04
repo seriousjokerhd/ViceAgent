@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/card_background_selector"
+                android:padding="4dp">
+
+    <TextView
+        android:id="@+id/objectId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <com.parse.ParseImageView
+        android:id="@+id/resultImageView"
+        android:layout_width="170dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/card_background_selector"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/images_null"/>
+
+
+    <TextView
+        android:id="@+id/resultPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/resultImageView"
+        android:layout_toRightOf="@+id/resultImageView"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/resultTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultPriceTextView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/resultImageView"
+        android:layout_toRightOf="@+id/resultImageView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/resultAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultTitleTextView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/resultImageView"
+        android:layout_toRightOf="@+id/resultImageView"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/resultLocalityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultAddressTextView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/resultImageView"
+        android:layout_toRightOf="@+id/resultImageView"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/resultPlotAreaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultLocalityTextView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/resultImageView"
+        android:layout_toRightOf="@+id/resultImageView"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/resultBathroomTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultLocalityTextView"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/resultLocalityTextView"
+        android:layout_toRightOf="@+id/resultLocalityTextView"
+        />
+
+
+</RelativeLayout>
+

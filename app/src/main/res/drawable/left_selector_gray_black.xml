@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <stroke android:width="0.35000002dip" android:color="@color/buttonBorderSelected" />
+            <solid android:color="@color/buttonClickedBg" />
+            <corners android:topLeftRadius="2.0dip" android:bottomLeftRadius="2.0dip" />
+            <padding android:left="0.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="0.0dip" />
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape>
+            <stroke android:width="0.35000002dip" android:color="@color/buttonBorderSelected" />
+            <solid android:color="@color/buttonClickedBg" />
+            <corners android:topLeftRadius="2.0dip" android:bottomLeftRadius="2.0dip" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape>
+            <stroke android:width="0.35000002dip" android:color="@color/buttonBorderSelected" />
+            <solid android:color="@color/buttonClickedBg" />
+            <corners android:topLeftRadius="2.0dip" android:bottomLeftRadius="2.0dip" />
+            <padding android:left="0.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="0.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/buttonUnClickedBg" />
+            <stroke android:width="0.35000002dip" android:color="@color/buttonBorder" />
+            <corners android:topLeftRadius="2.0dip" android:topRightRadius="0.0dip" android:bottomLeftRadius="2.0dip" android:bottomRightRadius="0.0dip" />
+        </shape>
+    </item>
+</selector>

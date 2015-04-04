@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Vice Agent</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="menu_action_logout_lable">Logout</string>
+    <string name="buy">Buy</string>
+    <string name="rent">Rent</string>
+    <string name="project">Project</string>
+    <string-array name="cities">
+
+        <item>Agartala</item>
+        <item>Agra</item>
+        <item>Agra</item>
+        <item>Agra</item>
+        <item>Agumbe</item>
+        <item>Ahmedabad</item>
+        <item> Aizawl</item>
+        <item>Ajmer</item>
+        <item>Alappuzha Beach</item>
+        <item>Allahabad</item>
+        <item>Alleppey</item>
+        <item>Almora</item>
+        <item>Amarnath</item>
+        <item>Amritsar</item>
+        <item>Anantagir</item>
+        <item>Andaman and Nicobar Islands</item>
+        <item>Araku valley</item>
+        <item>Aurangabad</item>
+        <item>Ayodhya</item>
+        <item>Badrinath	Bandhavgarh National Park</item>
+        <item>Bangalore</item>
+        <item>Baroda</item>
+        <item>Bastar</item>
+        <item>Bhagalpur</item>
+        <item>Mumbai</item>
+        <item>Delhi</item>
+        <item>Ghaziabad</item>
+        <item>Vadodara</item>
+        <item>Patna</item>
+        <item>Pimpri-Chinchwad</item>
+        <item>Visakhapatnam</item>
+        <item>Bhopal</item>
+        <item>Thane</item>
+        <item>Indore</item>
+        <item>Nagpur</item>
+        <item>Kanpur</item>
+        <item>Lucknow</item>
+        <item>Jaipur</item>
+        <item>Kolkata</item>
+        <item>Surat</item>
+        <item>Pune</item>
+        <item>Chennai</item>
+        <item>Hyderabad</item>
+        <item>Bangalore</item>
+        <item>Hubballi-Dharwad</item>
+        <item>Solapur</item>
+        <item>Chandigarh</item>
+        <item>Guwahati</item>
+        <item>Kota</item>
+        <item>Raipur</item>
+        <item>Madurai</item>
+        <item>Jodhpur</item>
+        <item>Vijayawada</item>
+        <item>Gwalior</item>
+        <item>Jabalpur</item>
+        <item>Coimbatore</item>
+        <item>Howrah</item>
+        <item>Ranchi</item>
+        <item>Navi Mumbai</item>
+        <item>Amritsar</item>
+        <item>Dhanbad</item>
+        <item>Aurangabad</item>
+        <item>Srinagar</item>
+        <item>Varanasi</item>
+        <item>Vasai-Virar</item>
+        <item>Kalyan-Dombivali</item>
+        <item>Rajkot</item>
+        <item>Meerut</item>
+        <item>Faridabad</item>
+        <item>Nashik</item>
+        <item>Bodh Gaya</item>
+        <item>Bilaspur</item>
+        <item>Bidar</item>
+        <item>Bhuj</item>
+        <item>Bhubaneswar</item>
+        <item>Bhopal</item>
+        <item>Bhimtal</item>
+        <item>Bhilai</item>
+
+
+    </string-array>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="signup_error_title">Oops !</string>
+    <string name="signup_error_message">Please input Email, Username, and Password</string>
+    <string name="login_error_message">Make sure you have entered you Username and Password</string>
+    <string name="login_error_title">Oops!</string>
+    <string name="menu_logout_lable">Logout</string>
+    <string name="error_titile">We are Sorry</string>
+
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_sell_rent">Sell Rent Property</string>
+
+    <string name="hint_password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="hint_username">Phone Number</string>
+    <string name="hint_email">Email</string>
+    <string name="have_acount">Already have an account? Login</string>
+    <string name="im_looking_text_view">I am looking to</string>
+    <string name="sell_property">Sell Property</string>
+    <string name="rent_property">Rent Out Property</string>
+    <string name="property_type">Property Type</string>
+    <string name="apt">Appartment</string>
+    <string name="builder_floor">Builder Floor</string>
+    <string name="plot_land">Plot/Land</string>
+    <string name="house">House</string>
+    <string name="studio_apartment">Studio Apartment</string>
+    <string name="farmhouse">Farmhouse</string>
+    <string name="serviced_apt">Serviced Apartment</string>
+    <string name="property_address">Property Address</string>
+    <string name="city_hint">Enter Your City Name</string>
+    <string name="locality_hint">Locality</string>
+    <string name="address_hint">Address</string>
+    <string name="property_details">Property Details</string>
+    <string name="asking_price_hint">Asking Price</string>
+    <string name="bathrooms">Bathrooms</string>
+    <string name="bedrooms">Bedrooms</string>
+    <string name="plot_area">Plot Area</string>
+    <string name="plot_area_hint">Plot Area in Sq. Ft.</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="resale">Resale</string>
+    <string name="new_booking">New Booking</string>
+    <string name="availability">Availability</string>
+    <string name="under_construction">Under Construction</string>
+    <string name="ready_to_move">Ready To Move</string>
+    <string name="descritpion_hint">Write a short Description about your property</string>
+    <string name="post_ad">Post Ad</string>
+    <string name="empty_number">Please Enter a valid number</string>
+    <string name="empty_invalid_password">Please enter a valid Password</string>
+    <string name="error_title">Error !!!</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="title_activity_result">Result</string>
+
+    <string name="hello_world">Hello world!</string>
+
+
+    <string name="error_external_storage">There was an error accessing your device\'s external storage</string>
+    <string name="general_error">There was an error</string>
+    <string name="signup_name_error">Please enter Your Full Name</string>
+    <string name="phone_number_error">Please Enter 10 Digit Phone Number Only... Without \"0\" or +91</string>
+    <string name="password_error">Please enter a password</string>
+
+    <string-array name="camera_dailogs">
+        <item>Take Picture</item>
+        <item>Choose Picture</item>
+    </string-array>
+    <string name="title_activity_detail_property">DetailPropertyActivity</string>
+
+</resources>

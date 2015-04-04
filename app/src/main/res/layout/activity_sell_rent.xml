@@ -1,0 +1,450 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1400dp"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="viceagent.com.viceagent.SellRentActivity">
+
+
+            <TextView
+                android:id="@+id/imLookingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="@string/im_looking_text_view"/>
+
+            <HorizontalScrollView
+
+                android:id="@+id/imLookingHorizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imLookingTextView"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/sellPropertyButton"
+                        style="@style/PropertTypeLeftButton"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:text="@string/sell_property"/>
+
+                    <Button
+                        android:id="@+id/rentPropertyButton"
+                        style="@style/PropertTypeRightButton"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:text="@string/rent_property"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/propertyTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imLookingHorizontalScrollView"
+                android:paddingTop="10dp"
+                android:text="@string/property_type"/>
+
+            <HorizontalScrollView
+
+                android:id="@+id/propertyTypeHorizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/propertyTypeTextView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/appartmentButton"
+                        style="@style/PropertTypeLeftButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/apt"/>
+
+                    <Button
+                        android:id="@+id/builderFloorButton"
+                        style="@style/PropertTypeButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/builder_floor"/>
+
+                    <Button
+                        android:id="@+id/plotLandButton"
+                        style="@style/PropertTypeButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/plot_land"/>
+
+                    <Button
+                        android:id="@+id/houseButton"
+                        style="@style/PropertTypeButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/house"/>
+
+                    <Button
+                        android:id="@+id/studioApartmentButton"
+                        style="@style/PropertTypeRightButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/studio_apartment"/>
+
+                    <Button
+                        android:id="@+id/farmHouseButton"
+                        style="@style/PropertTypeRightButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/farmhouse"/>
+
+                    <Button
+                        android:id="@+id/servicedApartmentButton"
+                        style="@style/PropertTypeRightButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/serviced_apt"/>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/propertyAddressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/propertyTypeHorizontalScrollView"
+                android:layout_marginTop="10dp"
+                android:text="@string/property_address"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/citiesAutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/propertyAddressTextView"
+                android:hint="@string/city_hint"
+                android:paddingTop="10dp"/>
+
+
+            <EditText
+                android:id="@+id/localityEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/citiesAutoCompleteTextView"
+                android:layout_marginTop="20dp"
+                android:hint="@string/locality_hint"/>
+
+            <EditText
+                android:id="@+id/addressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/localityEditText"
+                android:layout_marginTop="20dp"
+                android:hint="@string/address_hint"/>
+
+            <TextView
+                android:id="@+id/propertyDetailsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/addressEditText"
+                android:paddingTop="10dp"
+                android:text="@string/property_details"/>
+
+            <EditText
+                android:id="@+id/askingPriceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/propertyDetailsTextView"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/asking_price_hint"
+                android:inputType="number"/>
+
+            <NumberPicker
+                android:id="@+id/bathroomsNumberPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/askingPriceEditText"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bedroomsNumberPicker"
+                android:layout_alignEnd="@+id/propertyAddressTextView"
+                android:layout_alignRight="@+id/propertyAddressTextView"
+                android:layout_marginRight="5dp"
+                android:text="@string/bathrooms"/>
+
+            <NumberPicker
+                android:id="@+id/bedroomsNumberPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/bathroomsNumberPicker"
+                android:layout_marginLeft="150dp"
+                android:layout_toEndOf="@+id/propertyTypeTextView"
+                android:layout_toRightOf="@+id/propertyTypeTextView"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bedroomsNumberPicker"
+                android:layout_alignLeft="@+id/bedroomsNumberPicker"
+                android:layout_alignStart="@+id/bedroomsNumberPicker"
+                android:layout_marginLeft="5dp"
+                android:text="@string/bedrooms"
+                android:id="@+id/textView2"/>
+
+            <TextView
+                android:id="@+id/ploatAreaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/bathroomsNumberPicker"
+                android:layout_marginTop="10dp"
+                android:text="@string/plot_area"/>
+
+            <EditText
+                android:id="@+id/plotAreaEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/ploatAreaTextView"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="@string/plot_area_hint"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/transactionTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/plotAreaEditText"
+                android:layout_marginTop="10dp"
+                android:text="@string/transaction_type"/>
+
+            <HorizontalScrollView
+                android:id="@+id/transactionTypeHorizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/transactionTypeTextView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/resaleButton"
+                        style="@style/PropertTypeLeftButton"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:text="@string/resale"/>
+
+                    <Button
+                        android:id="@+id/newBookingButton"
+                        style="@style/PropertTypeRightButton"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:text="@string/new_booking"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/availablityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/transactionTypeHorizontalScrollView"
+                android:layout_marginTop="10dp"
+                android:text="@string/availability"/>
+
+            <HorizontalScrollView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/availablityTextView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/underConstructionButton"
+                        style="@style/PropertTypeLeftButton"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:text="@string/under_construction"/>
+
+                    <Button
+                        android:id="@+id/readyToMovebutton"
+                        style="@style/PropertTypeRightButton"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:text="@string/ready_to_move"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <EditText
+                android:id="@+id/descriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:editable="false"
+                android:ems="10"
+                android:hint="@string/descritpion_hint"
+                android:inputType="textMultiLine"
+                android:linksClickable="false"/>
+
+            <Button
+                android:id="@+id/takePhotoButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Take Photo"
+                android:layout_below="@id/descriptionEditText"
+                android:padding="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/photoView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/descriptionEditText"
+                android:visibility="gone"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="One More Photo"
+                android:id="@+id/takePhoto1"
+                android:layout_below="@id/descriptionEditText"
+                android:padding="10dp"
+                android:layout_marginLeft="110dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/photoView1"
+                android:layout_below="@id/descriptionEditText"
+                android:padding="10dp"
+                android:layout_marginLeft="110dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Another Photo"
+                android:id="@+id/takePhoto2"
+                android:layout_below="@id/descriptionEditText"
+                android:padding="10dp"
+                android:layout_marginLeft="220dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/photoView2"
+                android:layout_below="@id/descriptionEditText"
+                android:padding="10dp"
+                android:layout_marginLeft="220dp"
+                android:scaleType="fitXY"
+                android:visibility="gone"/>
+
+
+
+            <Button
+                android:id="@+id/postAdButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/photoView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+
+                android:text="@string/post_ad"/>
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
