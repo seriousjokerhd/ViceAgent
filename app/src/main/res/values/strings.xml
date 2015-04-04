@@ -134,8 +134,8 @@
     <string name="address_hint">Address</string>
     <string name="property_details">Property Details</string>
     <string name="asking_price_hint">Asking Price</string>
-    <string name="bathrooms">Bathrooms</string>
-    <string name="bedrooms">Bedrooms</string>
+    <string name="bathrooms">Bathroom</string>
+    <string name="bedrooms">Bedroom</string>
     <string name="plot_area">Plot Area</string>
     <string name="plot_area_hint">Plot Area in Sq. Ft.</string>
     <string name="transaction_type">Transaction Type</string>
@@ -166,5 +166,9 @@
         <item>Choose Picture</item>
     </string-array>
     <string name="title_activity_detail_property">DetailPropertyActivity</string>
+    <string name="description_lable">Description</string>
+    <string name="price_lable">Price</string>
+    <string name="dealer_name_lable">Dealer\'s Name</string>
+    <string name="action_call">Call the Dealer</string>
 
 </resources>

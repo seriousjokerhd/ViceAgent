@@ -38,14 +38,14 @@ public class ImageResizer {
         int imageWidth = dimensions.first;
         int imageHeight = dimensions.second;
         float ratio = (float) dimensions.first / dimensions.second;
-        
+
         int targetWidth;
         int targetHeight;
 
         // Determine portrait or landscape
         if (imageWidth > imageHeight) {
             // Landscape image. ratio (width/height) is > 1
-        	targetHeight = shorterSideTarget; 
+        	targetHeight = shorterSideTarget;
             targetWidth = Math.round(shorterSideTarget * ratio);
         }
         else {
@@ -53,7 +53,6 @@ public class ImageResizer {
         	targetWidth = shorterSideTarget;
             targetHeight = Math.round(shorterSideTarget / ratio);
         }
-        
 		return resizeImage(imageData, targetWidth, targetHeight);
 	}
 	

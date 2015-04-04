@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <uses-feature
         android:name="android.hardware.Camera"
@@ -57,7 +59,7 @@
         <activity
             android:name=".DetailPropertyActivity"
             android:label="@string/title_activity_detail_property"
-            android:parentActivityName="mainui.MainActivity" >
+            android:parentActivityName=".PropertyResultActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".PropertyResultActivity" />
