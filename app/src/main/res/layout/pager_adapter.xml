@@ -6,7 +6,6 @@
     android:layout_height="fill_parent">
 
 
-
     <com.astuetz.PagerSlidingTabStrip
         android:id="@+id/tabs"
         android:layout_width="match_parent"

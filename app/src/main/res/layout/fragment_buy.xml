@@ -1,11 +1,277 @@
-<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+    >
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            tools:context="mainui.FragmentBuy">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:id="@+id/searchLinear">
+
+                <AutoCompleteTextView
+                    android:id="@+id/searchCity"
+                    style="@style/SearchFormSuggestorInput"
+                    android:hint="Search For Your City"
+                    />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Done"
+                    android:id="@+id/doneButton"
+                    android:visibility="gone"
+                    android:layout_gravity="right"/>
+                <SearchView
+                    android:id="@+id/searchLocality"
+                    style="@style/Search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchCity"
+                    android:hint="Locality"
+                    android:visibility="gone"/>
+
+                <ListView
+                    android:id="@+id/list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchLocality"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/priceRange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/searchLinear"
+                android:paddingTop="10dp"
+                android:text="@string/price_range_lable"/>
+
+
+            <com.appyvet.rangebar.RangeBar
+                android:id="@+id/rangebar"
+                xmlns:custom="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
-                android:background="@color/white"
-                android:layout_height="match_parent"
-                android:padding="20dp">
+                android:layout_height="72dp"
+                android:layout_below="@+id/priceRange"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                custom:barColor="@color/primary"
+                custom:connectingLineColor="@color/primary"
+                custom:pinColor="@color/primary"
+                custom:selectorColor="@color/primary"
+                custom:tickColor="@color/primary"
+                custom:tickEnd="1000"
+                custom:tickInterval="1"
+                custom:tickStart="0"/>
+
+            <TextView
+                android:id="@+id/propertyTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/rangebar"
+                android:paddingTop="10dp"
+                android:text="@string/property_type"/>
+
+            <HorizontalScrollView
+
+                android:id="@+id/propertyTypeHorizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/propertyTypeTextView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/appartmentButton"
+                        style="@style/PropertTypeLeftButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/apt"/>
+
+                    <Button
+                        android:id="@+id/builderFloorButton"
+                        style="@style/PropertTypeButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/builder_floor"/>
+
+                    <Button
+                        android:id="@+id/plotLandButton"
+                        style="@style/PropertTypeButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/plot_land"/>
+
+                    <Button
+                        android:id="@+id/houseButton"
+                        style="@style/PropertTypeButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/house"/>
+
+                    <Button
+                        android:id="@+id/studioApartmentButton"
+                        style="@style/PropertTypeRightButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/studio_apartment"/>
+
+                    <Button
+                        android:id="@+id/farmHouseButton"
+                        style="@style/PropertTypeRightButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/farmhouse"/>
+
+                    <Button
+                        android:id="@+id/servicedApartmentButton"
+                        style="@style/PropertTypeRightButton"
+                        android:layout_width="160dp"
+                        android:layout_height="90dp"
+                        android:drawableTop="@drawable/custom_check"
+                        android:text="@string/serviced_apt"/>
 
 
-</RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/transactionTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/propertyTypeHorizontalScrollView"
+                android:layout_marginTop="10dp"
+                android:text="@string/transaction_type"/>
+
+            <HorizontalScrollView
+                android:id="@+id/transactionTypeHorizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/transactionTypeTextView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/resaleButton"
+                        style="@style/PropertTypeLeftButton"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:text="@string/resale"/>
+
+                    <Button
+                        android:id="@+id/newBookingButton"
+                        style="@style/PropertTypeRightButton"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:text="@string/new_booking"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/availablityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/transactionTypeHorizontalScrollView"
+                android:layout_marginTop="10dp"
+                android:text="@string/availability"/>
+
+            <HorizontalScrollView
+                android:id="@+id/availability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/availablityTextView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/underConstructionButton"
+                        style="@style/PropertTypeLeftButton"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:text="@string/under_construction"/>
+
+                    <Button
+                        android:id="@+id/readyToMovebutton"
+                        style="@style/PropertTypeRightButton"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:text="@string/ready_to_move"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/Search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/availability"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:text="Search Properties"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

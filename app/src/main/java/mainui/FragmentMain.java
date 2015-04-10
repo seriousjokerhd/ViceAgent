@@ -54,7 +54,6 @@ public class FragmentMain extends android.support.v4.app.Fragment {
         listaFragments = new ArrayList<android.support.v4.app.Fragment>();
         listaFragments.add(FragmentBuy.newInstance(0));
         listaFragments.add(FragmentRent.newInstance(0));
-        listaFragments.add(FragmentProject.newInstance(0));
 
         // Creamos nuestro Adapter
         mPagerAdapter = new PageAdapter(getActivity(), getFragmentManager(), listaFragments);
@@ -69,11 +68,12 @@ public class FragmentMain extends android.support.v4.app.Fragment {
         PagerSlidingTabStrip tabs = (PagerSlidingTabStrip) v.findViewById(R.id.tabs);
         tabs.setIndicatorColor(getResources().getColor(R.color.accent));
 
+
         tabs.setShouldExpand(true);
 
 
-       // tabs.setTextColorResource(R.color.white);
-       // tabs.setDividerColor(getResources().getColor(R.color.accent));
+//       tabs.setTextColorResource(R.color.white);
+//       tabs.setDividerColor(getResources().getColor(R.color.accent));
         tabs.setViewPager(pager);
 
 

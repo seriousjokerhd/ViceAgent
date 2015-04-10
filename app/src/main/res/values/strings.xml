@@ -3,9 +3,9 @@
 
     <string name="app_name">Vice Agent</string>
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Your Listing</string>
+    <string name="title_section3">Sell or Rent Your Property</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="menu_action_logout_lable">Logout</string>
@@ -170,5 +170,7 @@
     <string name="price_lable">Price</string>
     <string name="dealer_name_lable">Dealer\'s Name</string>
     <string name="action_call">Call the Dealer</string>
+    <string name="price_range_lable">Choose Your Price Range</string>
+    <string name="title_activity_test_list">TestListActivity</string>
 
 </resources>

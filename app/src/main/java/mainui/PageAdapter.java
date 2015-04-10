@@ -36,10 +36,6 @@ public class PageAdapter extends FragmentStatePagerAdapter {
         } else if (position == 1) {
             return mContext.getString(R.string.rent);
         }
-        else if (position == 2) {
-            return mContext.getString(R.string.project);
-        }
-
         return "";
     }
 

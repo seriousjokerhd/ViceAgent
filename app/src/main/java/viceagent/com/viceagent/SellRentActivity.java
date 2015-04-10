@@ -543,7 +543,7 @@ public class SellRentActivity extends ActionBarActivity {
         final String[] mCities = getResources().getStringArray(R.array.cities);
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(getApplicationContext(), R.layout.auto_complete_adapter, mCities);
         mCityAutoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.citiesAutoCompleteTextView);
-        mCityAutoCompleteTextView.setThreshold(2);
+        mCityAutoCompleteTextView.setThreshold(1);
         mCityAutoCompleteTextView.setAdapter(adapter);
 
 

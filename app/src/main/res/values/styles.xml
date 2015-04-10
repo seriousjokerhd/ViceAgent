@@ -8,11 +8,50 @@
 
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
     </style>
+
+
     <style name="AppThemeNew" parent="Theme.AppCompat">
         <!-- Customize your theme here. -->
-
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
+
+        <item name="actionBarTheme">@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <!-- Text colors -->
+        <item name="android:colorForeground">@color/bright_foreground_material_light</item>
+        <item name="android:colorForegroundInverse">@color/bright_foreground_material_dark</item>
+        <item name="android:colorBackground">@color/background_material_light</item>
+        <item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_light</item>
+        <item name="android:disabledAlpha">0.5</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@color/background_material_light</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/abc_primary_text_material_light</item>
+        <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_dark</item>
+        <item name="android:textColorSecondary">@color/abc_secondary_text_material_light</item>
+        <item name="android:textColorSecondaryInverse">@color/abc_secondary_text_material_dark</item>
+        <item name="android:textColorTertiary">@color/abc_secondary_text_material_light</item>
+        <item name="android:textColorTertiaryInverse">@color/abc_secondary_text_material_dark</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/abc_primary_text_disable_only_material_light</item>
+        <item name="android:textColorPrimaryInverseDisableOnly">@color/abc_primary_text_disable_only_material_dark</item>
+        <item name="android:textColorHint">@color/hint_foreground_material_light</item>
+        <item name="android:textColorHintInverse">@color/hint_foreground_material_dark</item>
+        <item name="android:textColorHighlight">@color/highlighted_text_material_light</item>
+        <item name="android:textColorLink">@color/link_text_material_light</item>
+
+        <!-- Text styles -->
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+        <item name="android:textAppearanceInverse">@style/TextAppearance.AppCompat.Inverse</item>
+        <item name="android:textAppearanceLarge">@style/TextAppearance.AppCompat.Large</item>
+        <item name="android:textAppearanceLargeInverse">@style/TextAppearance.AppCompat.Large.Inverse</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textAppearanceMediumInverse">@style/TextAppearance.AppCompat.Medium.Inverse</item>
+        <item name="android:textAppearanceSmall">@style/TextAppearance.AppCompat.Small</item>
+        <item name="android:textAppearanceSmallInverse">@style/TextAppearance.AppCompat.Small.Inverse</item>
+        <item name="android:spinnerStyle">@style/Widget.AppCompat.Spinner</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
+        <item name="android:listChoiceIndicatorSingle">@drawable/abc_btn_radio_material</item>
+        <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material</item>
 
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
     </style>
@@ -22,6 +61,7 @@
 
         <item name="color">@android:color/white</item>
     </style>
+
     <style name="PropertTypeButton">
         <item name="android:textSize">13.0sp</item>
         <item name="android:textColor">@color/textBlack</item>
@@ -33,6 +73,7 @@
         <item name="android:layout_height">fill_parent</item>
         <item name="android:drawablePadding">0.0dip</item>
     </style>
+
     <style name="PropertTypeLeftButton">
         <item name="android:textSize">13.0sp</item>
         <item name="android:textColor">@color/textBlack</item>
@@ -44,6 +85,7 @@
         <item name="android:layout_height">fill_parent</item>
         <item name="android:drawablePadding">0.0dip</item>
     </style>
+
     <style name="PropertTypeRightButton">
         <item name="android:textSize">13.0sp</item>
         <item name="android:textColor">@color/textBlack</item>
@@ -54,6 +96,37 @@
         <item name="android:layout_width">130.0dip</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:drawablePadding">0.0dip</item>
+    </style>
+
+
+
+    <!--for search view-->
+
+    <style name="SearchFormSuggestorInput">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@drawable/custom_text_color_black_white</item>
+        <item name="android:textColorHint">@color/hint_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/edittext</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45.0dip</item>
+        <item name="android:layout_marginTop">6.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableLeft">@drawable/ic_action_search</item>
+        <item name="android:drawablePadding">2.0dip</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="Search">
+        <item name="searchViewStyle">@style/Widget.AppCompat.SearchView</item>
+        <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
+        <item name="textColorSearchUrl">@color/abc_search_url_text</item>
+        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.AppCompat.SearchResult.Title</item>
+        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.AppCompat.SearchResult.Subtitle</item>
+
     </style>
 
 </resources>

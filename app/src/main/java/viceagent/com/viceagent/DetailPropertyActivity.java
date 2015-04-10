@@ -77,7 +77,7 @@ public class DetailPropertyActivity extends ActionBarActivity {
 
                     TextView priceTextView = (TextView) findViewById(R.id.priceTextView);
                     String price = parseObject.getString(ParseConstants.KEY_PRICE);
-                    priceTextView.setText(price);
+                    priceTextView.setText("Rs. " + price);
 
                     TextView bedroomTextView = (TextView) findViewById(R.id.bedroomTextView);
                     String bedroom = parseObject.getString(ParseConstants.KEY_BEDROOM);
@@ -89,7 +89,7 @@ public class DetailPropertyActivity extends ActionBarActivity {
 
                     TextView plotAreaTextView = (TextView) findViewById(R.id.plotAreaTextView);
                     String plotArea = parseObject.getString(ParseConstants.KEY_PLOT_AREA);
-                    plotAreaTextView.setText(plotArea);
+                    plotAreaTextView.setText(plotArea + " sq.ft.");
 
 
                     TextView addressTextView = (TextView) findViewById(R.id.addressTextView);

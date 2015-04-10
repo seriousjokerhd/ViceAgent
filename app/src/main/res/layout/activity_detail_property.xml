@@ -9,271 +9,271 @@
         android:layout_height="wrap_content">
 
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:context="viceagent.com.viceagent.DetailPropertyActivity">
 
-                tools:context="viceagent.com.viceagent.DetailPropertyActivity">
 
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-    <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/horizontalScrollView">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-            <com.parse.ParseImageView
-                android:layout_width="385dp"
-                android:layout_height="220dp"
-                android:id="@+id/detailImage"
-                android:scaleType="fitXY"
-                android:src="@drawable/images_null"/>
+                    <com.parse.ParseImageView
+                        android:id="@+id/detailImage"
+                        android:layout_width="385dp"
+                        android:layout_height="220dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/images_null"/>
 
-            <com.parse.ParseImageView
-                android:layout_width="385dp"
-                android:layout_height="220dp"
-                android:id="@+id/detailImage1"
-                android:scaleType="fitXY"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"/>
-            <com.parse.ParseImageView
-                android:layout_width="385dp"
-                android:layout_height="220dp"
-                android:id="@+id/detailImage2"
-                android:scaleType="fitXY"/>
-            </LinearLayout>
+                    <com.parse.ParseImageView
+                        android:id="@+id/detailImage1"
+                        android:layout_width="385dp"
+                        android:layout_height="220dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:scaleType="fitXY"/>
+
+                    <com.parse.ParseImageView
+                        android:id="@+id/detailImage2"
+                        android:layout_width="385dp"
+                        android:layout_height="220dp"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
             </HorizontalScrollView>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/property_type"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/horizontalScrollView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/horizontalScrollView"
+                android:layout_marginLeft="10dp"
+                android:text="@string/property_type"
+                android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/propertyTypeTextView"
-        android:textSize="20dp"
-        android:textColor="@android:color/black"
-        android:layout_below="@+id/horizontalScrollView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="150dp"/>
+            <TextView
+                android:id="@+id/propertyTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/horizontalScrollView"
+                android:layout_marginLeft="150dp"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/price_lable"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="10dp"
-        android:textSize="20sp"
-        />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView3"
+                android:layout_marginLeft="10dp"
+                android:text="@string/price_lable"
+                android:textSize="20sp"
+                />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/priceTextView"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="@color/primary_dark"
-        android:textSize="20sp"
-        android:layout_marginLeft="150dp"/>
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView3"
+                android:layout_marginLeft="150dp"
+                android:textColor="@color/primary_dark"
+                android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/bedrooms"
-        android:id="@+id/textView6"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView4"
+                android:layout_marginLeft="10dp"
+                android:text="@string/bedrooms"
+                android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/bedroomTextView"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:textColor="@android:color/black"
-        android:layout_marginLeft="150dp"/>
+            <TextView
+                android:id="@+id/bedroomTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView4"
+                android:layout_marginLeft="150dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/bathrooms"
-        android:id="@+id/textView8"
-        android:layout_below="@+id/textView6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView6"
+                android:layout_marginLeft="10dp"
+                android:text="@string/bathrooms"
+                android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/bathroomTextView"
-        android:layout_below="@+id/textView6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:textColor="@android:color/black"
-        android:layout_marginLeft="150dp"/>
-
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/plot_area"
-        android:id="@+id/textView10"
-        android:layout_below="@+id/textView8"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:layout_marginLeft="10dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/plotAreaTextView"
-        android:layout_below="@+id/textView8"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:textColor="@android:color/black"
-        android:layout_marginLeft="150dp"/>
+            <TextView
+                android:id="@+id/bathroomTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView6"
+                android:layout_marginLeft="150dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/address_hint"
-        android:id="@+id/textView12"
-        android:layout_below="@+id/textView10"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView8"
+                android:layout_marginLeft="10dp"
+                android:text="@string/plot_area"
+                android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/addressTextView"
-        android:layout_below="@+id/textView10"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="15sp"
-        android:textColor="@android:color/black"
-        android:layout_marginLeft="150dp"/>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/transaction_type"
-        android:id="@+id/textView14"
-        android:layout_below="@+id/textView12"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="17sp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/transactionTypeTextView"
-        android:layout_below="@+id/textView12"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:textColor="@android:color/black"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="15dp"/>
+            <TextView
+                android:id="@+id/plotAreaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView8"
+                android:layout_marginLeft="150dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/availability"
-        android:id="@+id/textView16"
-        android:layout_below="@+id/textView14"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView10"
+                android:layout_marginLeft="10dp"
+                android:text="@string/address_hint"
+                android:textSize="20sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/availabilityTextView"
-        android:layout_below="@+id/textView14"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:textColor="@android:color/black"
-        android:layout_marginLeft="150dp"/>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dealer_name_lable"
-        android:id="@+id/textView20"
-        android:layout_below="@+id/textView16"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:layout_marginLeft="10dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/dealerNameTextView"
-        android:layout_below="@+id/textView16"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textSize="20sp"
-        android:textColor="@android:color/black"
-        android:layout_marginLeft="150dp"/>
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView10"
+                android:layout_marginLeft="150dp"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"/>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/description_lable"
-        android:id="@+id/textView18"
-        android:layout_below="@+id/textView20"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView12"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/transaction_type"
+                android:textSize="17sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/descriptionTextView"
-        android:layout_below="@+id/textView18"
-        android:layout_alignLeft="@+id/textView18"
-        android:layout_alignStart="@+id/textView18"/>
+            <TextView
+                android:id="@+id/transactionTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView12"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
 
-</RelativeLayout>
-</LinearLayout>
-    </ScrollView>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView14"
+                android:layout_marginLeft="10dp"
+                android:text="@string/availability"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/availabilityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView14"
+                android:layout_marginLeft="150dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView16"
+                android:layout_marginLeft="10dp"
+                android:text="@string/dealer_name_lable"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/dealerNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView16"
+                android:layout_marginLeft="150dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView20"
+                android:layout_margin="15dp"
+                android:text="@string/description_lable"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView18"
+                android:layout_alignStart="@+id/textView18"
+                android:layout_below="@+id/textView18"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

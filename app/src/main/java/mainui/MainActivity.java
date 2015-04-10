@@ -2,8 +2,12 @@ package mainui;
 
 import android.app.Activity;
 
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -42,14 +46,19 @@ public class MainActivity extends ActionBarActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ParseUser currentUser = ParseUser.getCurrentUser();
-        if (currentUser == null) {
-            navigateToLogin();
-        } else {
-            Log.i(TAG, currentUser.getUsername());
-            Log.i(TAG, currentUser.getString("name"));
-        }
+        if (isNetworkAvailable()) {
 
+            ParseUser currentUser = ParseUser.getCurrentUser();
+            if (currentUser == null) {
+                navigateToLogin();
+            } else {
+                Log.i(TAG, currentUser.getUsername());
+                Log.i(TAG, currentUser.getString("name"));
+            }
+        }
+        else {
+            alertUserAboutNoNetwork();
+        }
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
 
@@ -68,6 +77,27 @@ public class MainActivity extends ActionBarActivity
         startActivity(intent);
     }
 
+    private boolean isNetworkAvailable() {
+        ConnectivityManager manager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = manager.getActiveNetworkInfo();
+        boolean isAvailabe = false;
+
+        if (networkInfo != null && networkInfo.isConnected()) {
+            isAvailabe = true;
+        }
+        return isAvailabe;
+    }
+
+    private void alertUserAboutNoNetwork() {
+        AlertDialog.Builder builder = new  AlertDialog.Builder(this)
+        .setTitle("Network is Not available")
+                .setMessage("Please Make sure you are connected and Try again Later")
+                .setPositiveButton(android.R.string.ok, null);
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+    }
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
