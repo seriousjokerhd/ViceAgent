@@ -24,6 +24,7 @@ import login.LoginActivity;
 import viceagent.com.viceagent.R;
 import viceagent.com.viceagent.PropertyResultActivity;
 import viceagent.com.viceagent.SellRentActivity;
+import viceagent.com.viceagent.YourListingActivity;
 
 
 public class MainActivity extends ActionBarActivity
@@ -111,7 +112,7 @@ public class MainActivity extends ActionBarActivity
 
             case 1:
 
-                Intent intent = new Intent(MainActivity.this, PropertyResultActivity.class);
+                Intent intent = new Intent(MainActivity.this, YourListingActivity.class);
                 startActivity(intent);
                 break;
 

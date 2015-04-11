@@ -51,7 +51,17 @@
         <activity
             android:name=".PropertyResultActivity"
             android:label="@string/title_activity_result"
-            android:parentActivityName="mainui.MainActivity" >
+            android:parentActivityName="mainui.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="mainui.MainActivity" />
+        </activity>
+        <activity
+            android:name=".YourListingActivity"
+            android:label="@string/title_activity_your_listing"
+            android:parentActivityName="mainui.MainActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="mainui.MainActivity" />
@@ -59,10 +69,11 @@
         <activity
             android:name=".DetailPropertyActivity"
             android:label="@string/title_activity_detail_property"
-            android:parentActivityName=".PropertyResultActivity" >
+            android:parentActivityName=".PropertyResultActivity"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".PropertyResultActivity" />
+                android:value="mainui.MainActivity" />
         </activity>
 
     </application>

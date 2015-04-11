@@ -1,5 +1,6 @@
 package login;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,7 +20,7 @@ import mainui.MainActivity;
 import viceagent.com.viceagent.R;
 
 
-public class SignUpActivity extends ActionBarActivity {
+public class SignUpActivity extends Activity {
 
     protected TextView mLoginTextVeiw;
     protected EditText mName;

@@ -151,6 +151,7 @@
     <string name="error_title">Error !!!</string>
     <string name="full_name_hint">Full Name</string>
     <string name="title_activity_result">Result</string>
+    <string name="title_activity_your_listing">Your Listing</string>
 
     <string name="hello_world">Hello world!</string>
 
@@ -165,12 +166,11 @@
         <item>Take Picture</item>
         <item>Choose Picture</item>
     </string-array>
-    <string name="title_activity_detail_property">DetailPropertyActivity</string>
+    <string name="title_activity_detail_property">Property Details</string>
     <string name="description_lable">Description</string>
     <string name="price_lable">Price</string>
     <string name="dealer_name_lable">Dealer\'s Name</string>
     <string name="action_call">Call the Dealer</string>
     <string name="price_range_lable">Choose Your Price Range</string>
-    <string name="title_activity_test_list">TestListActivity</string>
 
 </resources>

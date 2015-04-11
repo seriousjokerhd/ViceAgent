@@ -80,18 +80,19 @@
         android:layout_marginTop="8dp"
         android:layout_toEndOf="@+id/resultImageView"
         android:layout_toRightOf="@+id/resultImageView"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:text="500000 sq.ft."/>
 
     <TextView
         android:id="@+id/resultBathroomTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/resultLocalityTextView"
-        android:layout_marginLeft="2dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="10dp"
         android:layout_toEndOf="@+id/resultLocalityTextView"
         android:layout_toRightOf="@+id/resultLocalityTextView"
-        />
+        android:text="5 Bathrooms"/>
 
 
 </RelativeLayout>

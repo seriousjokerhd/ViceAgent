@@ -76,7 +76,7 @@ public class DetailPropertyActivity extends ActionBarActivity {
                     propetyTypeTextView.setText(propertyType);
 
                     TextView priceTextView = (TextView) findViewById(R.id.priceTextView);
-                    String price = parseObject.getString(ParseConstants.KEY_PRICE);
+                    Number price = parseObject.getNumber(ParseConstants.KEY_PRICE);
                     priceTextView.setText("Rs. " + price);
 
                     TextView bedroomTextView = (TextView) findViewById(R.id.bedroomTextView);

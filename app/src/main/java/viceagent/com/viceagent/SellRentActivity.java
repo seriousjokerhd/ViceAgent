@@ -747,7 +747,12 @@ public class SellRentActivity extends ActionBarActivity {
                 // Get values from Text fields
                 String locality = mLocalityEditText.getText().toString();
                 String address = mAddressEditText.getText().toString();
-                String askingPrice = mAskingPriceEditText.getText().toString();
+                String askingPriceString = mAskingPriceEditText.getText().toString();
+                Integer askingPrice = 0;
+                if (askingPriceString.isEmpty()) {
+
+                }
+                else {askingPrice = Integer.parseInt(askingPriceString);}
                 String plotArea = mPlotAreaEditText.getText().toString();
                 String description = mDescription.getText().toString();
                 String city = mCityAutoCompleteTextView.getText().toString();
@@ -830,7 +835,7 @@ public class SellRentActivity extends ActionBarActivity {
                 } else if (address.isEmpty()) {
 
                     mAddressEditText.setError("Please enter your Address... e.g. 400, Mendel Ave");
-                } else if (askingPrice.isEmpty()) {
+                } else if (askingPriceString.isEmpty()) {
 
                     mAskingPriceEditText.setError("Please choose a Asking Price");
                 } else if (plotArea.isEmpty()) {
