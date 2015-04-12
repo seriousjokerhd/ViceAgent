@@ -30,16 +30,20 @@
                     android:id="@+id/searchCity"
                     style="@style/SearchFormSuggestorInput"
                     android:hint="Search For Your City"
+                    android:background="@drawable/edittext_top_bg"
+                    android:padding="10dp"
                     />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
+                    android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:text="Done"
                     android:id="@+id/doneButton"
                     android:visibility="gone"
-                    android:layout_gravity="right"/>
+                    android:layout_gravity="right"
+                    android:background="@drawable/btnlogin"
+                    />
                 <SearchView
                     android:id="@+id/searchLocality"
                     style="@style/Search"
@@ -47,7 +51,10 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/searchCity"
                     android:hint="Locality"
-                    android:visibility="gone"/>
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_top_bg"
+                    />
 
                 <ListView
                     android:id="@+id/list_view"
@@ -269,7 +276,9 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:layout_marginTop="20dp"
-                android:text="Search Properties"/>
+                android:text="Search Properties"
+                android:background="@drawable/btnlogin"
+                />
 
 
         </RelativeLayout>

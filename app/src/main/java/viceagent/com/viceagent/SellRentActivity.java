@@ -32,6 +32,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import mainui.MainActivity;
+
 
 public class SellRentActivity extends ActionBarActivity {
 
@@ -882,7 +884,7 @@ public class SellRentActivity extends ActionBarActivity {
                     Property.saveInBackground();
 
                     Intent intent = new Intent(SellRentActivity.this,
-                            PropertyResultActivity.class);
+                            MainActivity.class);
                     startActivity(intent);
 
                 }

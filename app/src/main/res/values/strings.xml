@@ -113,7 +113,7 @@
 
     <string name="hint_password">Password</string>
     <string name="login">Login</string>
-    <string name="signup">SignUp</string>
+    <string name="signup">I don\'t have an account. Register Me.</string>
     <string name="hint_username">Phone Number</string>
     <string name="hint_email">Email</string>
     <string name="have_acount">Already have an account? Login</string>
@@ -129,8 +129,8 @@
     <string name="farmhouse">Farmhouse</string>
     <string name="serviced_apt">Serviced Apartment</string>
     <string name="property_address">Property Address</string>
-    <string name="city_hint">Enter Your City Name</string>
-    <string name="locality_hint">Locality</string>
+    <string name="city_hint">City</string>
+    <string name="locality_hint">Locality  e.g. Maninagar ... Satelite ...</string>
     <string name="address_hint">Address</string>
     <string name="property_details">Property Details</string>
     <string name="asking_price_hint">Asking Price</string>
@@ -172,5 +172,6 @@
     <string name="dealer_name_lable">Dealer\'s Name</string>
     <string name="action_call">Call the Dealer</string>
     <string name="price_range_lable">Choose Your Price Range</string>
+    <string name="sign_up_button">Sign Up</string>
 
 </resources>
