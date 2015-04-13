@@ -5,6 +5,7 @@
 
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
 
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
     </style>
@@ -14,6 +15,8 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+
 
         <item name="actionBarTheme">@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar</item>
         <!-- Text colors -->
@@ -62,11 +65,11 @@
         <item name="color">@android:color/white</item>
     </style>
 
-    <style name="PropertTypeButton">
+    <style name="PropertyMiddleBox">
         <item name="android:textSize">13.0sp</item>
         <item name="android:textColor">@color/textBlack</item>
         <item name="android:gravity">center</item>
-        <item name="android:background">@drawable/poperty_type</item>
+        <item name="android:background">@drawable/middle_box</item>
         <item name="android:padding">5.0dip</item>
         <item name="android:clickable">true</item>
         <item name="android:layout_width">130.0dip</item>
@@ -74,11 +77,11 @@
         <item name="android:drawablePadding">0.0dip</item>
     </style>
 
-    <style name="PropertTypeLeftButton">
+    <style name="PropertLeftBox">
         <item name="android:textSize">13.0sp</item>
         <item name="android:textColor">@color/textBlack</item>
         <item name="android:gravity">center</item>
-        <item name="android:background">@drawable/left_selector_gray_black</item>
+        <item name="android:background">@drawable/left_box</item>
         <item name="android:padding">5.0dip</item>
         <item name="android:clickable">true</item>
         <item name="android:layout_width">130.0dip</item>
@@ -86,11 +89,11 @@
         <item name="android:drawablePadding">0.0dip</item>
     </style>
 
-    <style name="PropertTypeRightButton">
+    <style name="PropertRightBox">
         <item name="android:textSize">13.0sp</item>
         <item name="android:textColor">@color/textBlack</item>
         <item name="android:gravity">center</item>
-        <item name="android:background">@drawable/right_selector_gray_black</item>
+        <item name="android:background">@drawable/right_box</item>
         <item name="android:padding">5.0dip</item>
         <item name="android:clickable">true</item>
         <item name="android:layout_width">130.0dip</item>
@@ -102,14 +105,14 @@
 
     <!--for search view-->
 
-    <style name="SearchFormSuggestorInput">
+    <style name="CustomSearchBox">
         <item name="android:textSize">16.0sp</item>
         <item name="android:textColor">@drawable/custom_text_color_black_white</item>
         <item name="android:textColorHint">@color/hint_color</item>
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">left|center</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:background">@drawable/edittext</item>
+        <item name="android:background">@drawable/text_field</item>
         <item name="android:paddingLeft">10.0dip</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">45.0dip</item>

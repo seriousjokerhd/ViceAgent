@@ -173,5 +173,6 @@
     <string name="action_call">Call the Dealer</string>
     <string name="price_range_lable">Choose Your Price Range</string>
     <string name="sign_up_button">Sign Up</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
 
 </resources>

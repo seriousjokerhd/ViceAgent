@@ -44,14 +44,14 @@
 
                     <Button
                         android:id="@+id/sellPropertyButton"
-                        style="@style/PropertTypeLeftButton"
+                        style="@style/PropertLeftBox"
                         android:layout_width="160dp"
                         android:layout_height="40dp"
                         android:text="@string/sell_property"/>
 
                     <Button
                         android:id="@+id/rentPropertyButton"
-                        style="@style/PropertTypeRightButton"
+                        style="@style/PropertRightBox"
                         android:layout_width="160dp"
                         android:layout_height="40dp"
                         android:text="@string/rent_property"/>
@@ -88,58 +88,58 @@
 
                     <Button
                         android:id="@+id/appartmentButton"
-                        style="@style/PropertTypeLeftButton"
+                        style="@style/PropertLeftBox"
                         android:layout_width="160dp"
                         android:layout_height="90dp"
-                        android:drawableTop="@drawable/custom_check"
+                        android:drawableTop="@drawable/apartment"
                         android:text="@string/apt"/>
 
                     <Button
                         android:id="@+id/builderFloorButton"
-                        style="@style/PropertTypeButton"
+                        style="@style/PropertyMiddleBox"
                         android:layout_width="160dp"
                         android:layout_height="90dp"
-                        android:drawableTop="@drawable/custom_check"
+                        android:drawableTop="@drawable/building_floor"
                         android:text="@string/builder_floor"/>
 
                     <Button
                         android:id="@+id/plotLandButton"
-                        style="@style/PropertTypeButton"
+                        style="@style/PropertyMiddleBox"
                         android:layout_width="160dp"
                         android:layout_height="90dp"
-                        android:drawableTop="@drawable/custom_check"
+                        android:drawableTop="@drawable/plot_land"
                         android:text="@string/plot_land"/>
 
                     <Button
                         android:id="@+id/houseButton"
-                        style="@style/PropertTypeButton"
+                        style="@style/PropertyMiddleBox"
                         android:layout_width="160dp"
                         android:layout_height="90dp"
-                        android:drawableTop="@drawable/custom_check"
+                        android:drawableTop="@drawable/house_png"
                         android:text="@string/house"/>
 
                     <Button
                         android:id="@+id/studioApartmentButton"
-                        style="@style/PropertTypeRightButton"
+                        style="@style/PropertRightBox"
                         android:layout_width="160dp"
                         android:layout_height="90dp"
-                        android:drawableTop="@drawable/custom_check"
+                        android:drawableTop="@drawable/studio_apartment"
                         android:text="@string/studio_apartment"/>
 
                     <Button
                         android:id="@+id/farmHouseButton"
-                        style="@style/PropertTypeRightButton"
+                        style="@style/PropertRightBox"
                         android:layout_width="160dp"
                         android:layout_height="90dp"
-                        android:drawableTop="@drawable/custom_check"
+                        android:drawableTop="@drawable/farm_house"
                         android:text="@string/farmhouse"/>
 
                     <Button
                         android:id="@+id/servicedApartmentButton"
-                        style="@style/PropertTypeRightButton"
+                        style="@style/PropertRightBox"
                         android:layout_width="160dp"
                         android:layout_height="90dp"
-                        android:drawableTop="@drawable/custom_check"
+                        android:drawableTop="@drawable/serviced_apartment"
                         android:text="@string/serviced_apt"/>
 
 
@@ -309,14 +309,14 @@
 
                     <Button
                         android:id="@+id/resaleButton"
-                        style="@style/PropertTypeLeftButton"
+                        style="@style/PropertLeftBox"
                         android:layout_width="160dp"
                         android:layout_height="40dp"
                         android:text="@string/resale"/>
 
                     <Button
                         android:id="@+id/newBookingButton"
-                        style="@style/PropertTypeRightButton"
+                        style="@style/PropertRightBox"
                         android:layout_width="160dp"
                         android:layout_height="40dp"
                         android:text="@string/new_booking"/>
@@ -352,14 +352,14 @@
 
                     <Button
                         android:id="@+id/underConstructionButton"
-                        style="@style/PropertTypeLeftButton"
+                        style="@style/PropertLeftBox"
                         android:layout_width="160dp"
                         android:layout_height="40dp"
                         android:text="@string/under_construction"/>
 
                     <Button
                         android:id="@+id/readyToMovebutton"
-                        style="@style/PropertTypeRightButton"
+                        style="@style/PropertRightBox"
                         android:layout_width="160dp"
                         android:layout_height="40dp"
                         android:text="@string/ready_to_move"/>
@@ -397,6 +397,9 @@
                 android:text="Take Photo"
                 android:layout_below="@id/descriptionEditText"
                 android:padding="10dp"
+                android:layout_marginTop="10dp"
+                style="@style/PropertyMiddleBox"
+                android:drawableTop="@drawable/camera"
                 />
 
             <ImageView
@@ -417,7 +420,10 @@
                 android:layout_below="@id/descriptionEditText"
                 android:padding="10dp"
                 android:layout_marginLeft="110dp"
-                android:visibility="gone"/>
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                style="@style/PropertLeftBox"
+                android:drawableTop="@drawable/camera"/>
 
             <ImageView
                 android:layout_width="100dp"
@@ -437,7 +443,10 @@
                 android:layout_below="@id/descriptionEditText"
                 android:padding="10dp"
                 android:layout_marginLeft="220dp"
-                android:visibility="gone"/>
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                style="@style/PropertRightBox"
+                android:drawableTop="@drawable/camera"/>
 
             <ImageView
                 android:layout_width="100dp"
